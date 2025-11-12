@@ -1,0 +1,21 @@
+{
+  "name": "cartoball",
+  "version": "1.0.0",
+  "description": "Carto Tile in PMTiles, on MapLibre GL globe",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.2.2"
+  },
+  "dependencies": {
+    "maplibre-gl": "^5.12.0",
+    "pmtiles": "^4.3.0"
+  }
+}
