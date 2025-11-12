@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoball - Carto Tile in PMTiles on MapLibre GL Globe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', 'Roboto', sans-serif;
+    }
+    
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 8px;
+      font-size: 7pt;
+      line-height: 120%;
+      max-width: 600px;
+      z-index: 1;
+    }
+    
+    .attribution-content {
+      margin-bottom: 5px;
+    }
+    
+    .watermark {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-left: 10px;
+    }
+    
+    .watermark img {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .maplibregl-popup {
+      max-width: 400px;
+    }
+    
+    p.stscod1 {
+      font-style: normal;
+      font-size: 9pt;
+      font-family: "Arial", "Roboto";
+      margin: 0;
+      padding: 5px;
+    }
+    
+    p.stscod2 {
+      font-style: italic;
+      font-size: 8.5pt;
+      font-family: "Arial", "Roboto";
+      margin: 0;
+      padding: 5px;
+    }
+    
+    p.stscod3 {
+      font-style: normal;
+      font-size: 9pt;
+      font-family: "Arial", "Roboto";
+      margin: 0;
+      padding: 5px;
+    }
+    
+    p.stscod4 {
+      font-style: normal;
+      font-size: 8.5pt;
+      font-family: "Arial", "Roboto";
+      margin: 0;
+      padding: 5px;
+    }
+    
+    p.stscod5 {
+      font-style: normal;
+      font-size: 8.5pt;
+      font-family: "Arial", "Roboto";
+      margin: 0;
+      padding: 5px;
+    }
+    
+    p.stscod6 {
+      font-style: italic;
+      font-size: 8pt;
+      font-family: "Arial", "Roboto";
+      margin: 0;
+      padding: 5px;
+    }
+    
+    p.stscod99 {
+      font-style: normal;
+      font-size: 6.5pt;
+      font-family: "Arial", "Roboto";
+      margin: 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
