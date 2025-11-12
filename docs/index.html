@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoball - Mirror Ball Favicon Preview</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d1b3d 100%);
+            color: white;
+        }
+        .preview-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            margin-top: 0;
+            background: linear-gradient(45deg, #00d4ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .favicon-display {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .favicon-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .favicon-box h3 {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #aaa;
+        }
+        img {
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
+        .description {
+            margin-top: 30px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h1>🪩 Cartoball Mirror Ball Favicon</h1>
+        <p class="description">
+            ミラーボール（ディスコボール）風のfavicon.icoを生成しました。<br>
+            cartoball プロジェクトのテーマに合わせた、球体デザインのファビコンです。
+        </p>
+        
+        <div class="favicon-display">
+            <div class="favicon-box">
+                <img src="favicon.ico" alt="Favicon 16x16" width="16" height="16" style="width: 64px; height: 64px;">
+                <h3>16x16 (拡大表示)</h3>
+            </div>
+            <div class="favicon-box">
+                <img src="favicon.ico" alt="Favicon 32x32" width="32" height="32" style="width: 128px; height: 128px;">
+                <h3>32x32 (拡大表示)</h3>
+            </div>
+            <div class="favicon-box">
+                <img src="favicon.ico" alt="Favicon actual size" width="32" height="32">
+                <h3>実際のサイズ (32x32)</h3>
+            </div>
+        </div>
+        
+        <p class="description">
+            ブラウザのタブにもこのアイコンが表示されます。<br>
+            <small>※ ファビコンの反映にはブラウザのキャッシュクリアが必要な場合があります。</small>
+        </p>
+    </div>
+</body>
+</html>
