@@ -6,8 +6,9 @@ dist/
 
 # Data and generated files
 data/
-cartoball.pmtiles
-cartoball.mbtiles
+/cartoball.pmtiles
+/cartoball.mbtiles
+/public/
 
 # OS files
 .DS_Store
