@@ -110,9 +110,10 @@ const map = new maplibregl.Map({
   renderWorldCopies: false
 });
 
-// ナビゲーションコントロールを追加
+// ナビゲーションコントロールとグローブコントロールを追加
 map.on('load', () => {
   map.addControl(new maplibregl.NavigationControl());
+  map.addControl(new maplibregl.GlobeControl());
 });
 
 // ポップアップの設定
