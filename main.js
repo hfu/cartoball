@@ -14,7 +14,11 @@ const map = new maplibregl.Map({
     sources: {
       cartoball: {
         type: 'vector',
-        url: 'pmtiles://./cartoball.pmtiles',
+        tiles: [
+          "https://k96mz.github.io/20240818CartoTileStylized/Data/VTstylized/{z}/{x}/{y}.pbf"
+        ],
+        minzoom: 0,
+        maxzoom: 2,
         attribution: '<div style="font-size: 7pt; line-height: 100%">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.​ Final boundary between the Republic of Sudan and the Republic of South Sudan has not yet been determined.​<br>* Non-Self Governing Territories<br>** Dotted line represents approximately the Line of Control in Jammu and Kashmir agreed upon by India and Pakistan. The final status of Jammu and Kashmir has not yet been agreed upon by the parties.​<br>*** A dispute exists between the Governments of Argentina and the United Kingdom of Great Britain and Northern Ireland concerning sovereignty over the Falkland Islands (Malvinas).</div><div style="font-size: 5pt; color: #009EDB" valign="bottom">Powered by<br><img src="https://unopengis.github.io/watermark/watermark.png" alt="UN OpenGIS logo" width="50" height="50"></div><div style="font-size: 7pt; margin-top: 5px;">Based on <a href="https://github.com/UN-Geospatial/cartotile-plain-design" target="_blank">UN Geospatial cartotile-plain-design</a></div>'
       }
     },
