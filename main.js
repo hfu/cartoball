@@ -10,8 +10,8 @@ import { Protocol } from 'pmtiles';
 const COLORS = {
   space: '#0a0a14',
   ocean: '#1a3a5c',
-  land: '#ededed',
-  border: '#4d4d4d'
+  land: [237, 237, 237],
+  border: [77, 77, 77]
 };
 
 // 境界線レイヤーの共通設定
@@ -24,7 +24,7 @@ const BOUNDARY_LAYER_BASE = {
 
 // 境界線の共通ペイント設定
 const BOUNDARY_PAINT_BASE = {
-  'line-color': ['rgb', 77, 77, 77],
+  'line-color': ['rgb', ...COLORS.border],
   'line-width': 0.8
 };
 
@@ -60,7 +60,7 @@ const mapStyle = {
       maxzoom: 4,
       minzoom: 0,
       filter: ['none', ['==', 'ISO3CD', 'ATA']],
-      paint: { 'fill-color': ['rgb', 237, 237, 237] }
+      paint: { 'fill-color': ['rgb', ...COLORS.land] }
     },
     {
       id: 'bndl_solid',
